@@ -1,0 +1,43 @@
+
+.card{
+    position: relative;
+    width: 270px;
+    height: 20%;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 0 13px 0px rgba(0,0,0,.3);
+    transition: .5s;
+    overflow: hidden;
+    margin: .85rem;
+}
+.card:hover{
+    height: 30%;
+}
+
+.card .card-body{
+    padding: .5rem .85rem 1rem;
+    height: 100%;
+}
+
+.card .card-body h6{
+    margin: .5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(79, 80, 80);
+    /* letter-spacing: 3px; */
+}
+
+.card .card-body p{
+    text-align: justify;
+    font-size: .85rem;
+    line-height: 25px;
+}
+
+.card .card-body div{
+    text-align: right;
+    width: 100%;
+}
+
+.card .card-body div a:hover{
+    color: red;
+}

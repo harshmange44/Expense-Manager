@@ -4,6 +4,7 @@ import { resolve } from 'path';
 
 import requireJwtAuth from '../../middleware/requireJwtAuth';
 import User, { hashPassword, validateUser } from '../../models/User';
+import Expense from '../../models/Expense';
 
 const router = Router();
 
@@ -104,6 +105,7 @@ router.delete('/:id', requireJwtAuth, async (req, res) => {
     if (!(tempUser.id === req.user.id))
       return res.status(400).json({ message: 'You do not have privilegies to delete that user.' });
 
+    await Expense.deleteMany({ user: tempUser.id });
     //delete user
     const user = await User.findByIdAndRemove(tempUser.id);
     res.status(200).json({ user });

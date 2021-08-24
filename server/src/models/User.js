@@ -44,7 +44,7 @@ const userSchema = new Schema(
       unique: true,
       sparse: true,
     },
-    messages: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Message' }],
+    expenses: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Expense' }],
   },
   { timestamps: true },
 );

@@ -9,8 +9,8 @@ import Register from './pages/Register/Register';
 import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
 import NotFound from './pages/NotFound/NotFound';
-
 import Loader from './components/Loader/Loader';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { logInUserWithOauth, loadMe } from './store/actions/authActions';
 

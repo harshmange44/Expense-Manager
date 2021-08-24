@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+import { getMyExpenses } from './myExpenseActions';
 import {
   LOGIN_WITH_OAUTH_LOADING,
   LOGIN_WITH_OAUTH_SUCCESS,
